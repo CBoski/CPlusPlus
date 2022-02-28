@@ -17,19 +17,27 @@ int main()
 	switch (choice)
 	{
 	case 'y': // Yen | conversion rate = 0.0087 USD
-		std::cout << convert << " yen is worth " << yen * convert << " in USD\n";
+		std::cout << convert << " yen is worth " << "$" << yen * convert << " in USD\n";
+		Sleep(3000);
 		break;
 
 	case 'k': // Kroner | conversion rate = 0.11 USD
-		std::cout << convert << " kroner is worth " << kroner * convert << " in USD\n";
+		std::cout << convert << " kroner is worth " << "$" << kroner * convert << " in USD\n";
+		Sleep(3000);
 		break;
 
 	case 'p': // Pounds | conversion rate = 1.36 USD
-		std::cout << convert << " pounds is worth " << pounds * convert << " in USD\n";
+		std::cout << convert << " pounds is worth " << "$" << pounds * convert << " in USD\n";
+		Sleep(3000);
 		break;
 
 	default:
 		std::cout << "Invalid selection entered. Please note that it is case sensitive!" << std::endl;
+		Sleep(3000);
 		break;
 	}
+
 }
+
+
+	
